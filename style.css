@@ -526,3 +526,28 @@ ul { list-style: none; }
 .list-side ul li { margin-bottom: 10px; display: flex; gap: 10px; align-items: center; }
 .do i { color: #2e7d32; }
 .dont i { color: #c62828; }
+
+/* --- TỐI ƯU HÓA ĐA THIẾT BỊ CHO TRANG BẢO QUẢN --- */
+@media (max-width: 768px) {
+    /* 1. Giảm khoảng cách phía trên để nội dung không bị quá trống trải trên màn hình nhỏ */
+    .page-content { 
+        padding-top: 50px; 
+    }
+
+    /* 2. Căn chỉnh phần Nên/Không nên thành cột dọc */
+    .dos-donts {
+        flex-direction: column; /* Chuyển từ ngang sang dọc */
+        gap: 30px;
+        padding: 20px;
+    }
+
+    /* 3. Tối ưu tiêu đề trên điện thoại */
+    .care-header h1 {
+        font-size: 28px; /* Thu nhỏ chữ tiêu đề để không bị vỡ dòng */
+    }
+
+    /* 4. Đảm bảo các thẻ card không bị dính sát mép */
+    .care-grid {
+        gap: 20px;
+    }
+}
