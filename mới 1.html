@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Wool Diary | Gói cảm xúc</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	</head>
+	<body>
+		<header class="header">
+			<i class="fa-solid fa-bars mobile-menu-btn" id="mobile-menu-btn"></i>
+			<div class="logo">The Wool Diary</div>
+			<nav class="nav-menu" id="nav-menu">
+				<a href="index.html">Trang chủ</a>
+				<a href="#">Sản phẩm</a>
+				<a href="#">Hướng dẫn bảo quản</a>
+				<a href="#">Lớp học</a>
+			</nav>
+			<div class="header-icons">
+				<a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+				<a href="login.html"><i class="fa-regular fa-user"></i></a>
+				<div class="cart-icon-wrapper" style="cursor: pointer;">
+					<i class="fa-solid fa-basket-shopping"></i>
+					<span id="cart-badge" class="cart-badge">0</span>
+				</div>
+			</div>
+		</header>
+
+		<section class="hero-banner">
+			<div class="hero-card">
+				<h1>Gói ghém niềm vui<br>vào từng mũi móc</h1>
+				<p>Nơi lưu giữ những sản phẩm len làm tay tỉ mỉ, giúp bạn tìm kiếm món quà ấm áp và đáng yêu cho người thân thương.</p>
+				<button class="btn-primary">Khám phá ngay</button>
+			</div>
+		</section>
+
+		<main>
+			<section class="trust-badges">
+				<div class="badge-item">
+					<i class="fa-solid fa-hand-holding-heart"></i>
+					<div>
+						<h4>100% Handmade</h4>
+						<p>Đan móc thủ công tỉ mỉ</p>
+					</div>
+				</div>
+				<div class="badge-item">
+					<i class="fa-solid fa-truck-fast"></i>
+					<div>
+						<h4>Freeship Toàn Quốc</h4>
+						<p>Cho đơn hàng từ 300k</p>
+					</div>
+				</div>
+				<div class="badge-item">
+					<i class="fa-solid fa-box-open"></i>
+					<div>
+						<h4>Đổi Trả Dễ Dàng</h4>
+						<p>Hỗ trợ trong vòng 7 ngày</p>
+					</div>
+				</div>
+				<div class="badge-item">
+					<i class="fa-solid fa-gift"></i>
+					<div>
+						<h4>Gói Quà Miễn Phí</h4>
+						<p>Tặng thiệp viết tay xinh xắn</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="category-section">
+				<h2 class="section-title">Khám Phá Tiệm Len</h2>
+				<div class="category-container">
+					<a href="#" class="category-box">
+						<div class="cat-img"><img src="https://images.unsplash.com/photo-1616421455589-3221d603a9f0?q=80&w=500&auto=format&fit=crop" alt="Thú len"></div>
+						<p>Thú Len Bông</p>
+					</a>
+					<a href="#" class="category-box">
+						<div class="cat-img"><img src="https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?q=80&w=500&auto=format&fit=crop" alt="Hoa len"></div>
+						<p>Hoa Len</p>
+					</a>
+					<a href="#" class="category-box">
+						<div class="cat-img"><img src="https://images.unsplash.com/photo-1584992236310-6edddc08acff?q=80&w=500&auto=format&fit=crop" alt="Dụng cụ"></div>
+						<p>Dụng Cụ Móc</p>
+					</a>
+					<a href="#" class="category-box">
+						<div class="cat-img"><img src="https://images.unsplash.com/photo-1628045543666-41f23789b7fa?q=80&w=500&auto=format&fit=crop" alt="Phụ kiện"></div>
+						<p>Phụ Kiện Xinh</p>
+					</a>
+				</div>
+			</section>
+
+			<section class="promo-section">
+				<div class="promo-container">
+					<div class="voucher-ticket">
+						<div class="voucher-left">
+							<h3>Giảm 15%</h3>
+							<p>Đơn từ 200k</p>
+						</div>
+						<div class="voucher-right">
+							<h4>Mã: <span>WOOL15</span></h4>
+							<button class="btn-copy" onclick="alert('Đã lưu mã WOOL15!')">Lưu mã</button>
+						</div>
+					</div>
+					<div class="voucher-ticket">
+						<div class="voucher-left" style="background-color: var(--pink-dark);">
+							<h3 style="color: white;">Freeship</h3>
+							<p style="color: white;">Mọi đơn hàng</p>
+						</div>
+						<div class="voucher-right">
+							<h4>Mã: <span>FREESHIP</span></h4>
+							<button class="btn-copy" onclick="alert('Đã lưu mã FREESHIP!')">Lưu mã</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+			<div class="product-grid">
+				<div class="product-card">
+					<img src="https://images.unsplash.com/photo-1584984647264-7e614d187214?q=80&w=2000&auto=format&fit=crop" alt="Vịt len">
+					<div class="product-info">
+						<h3>Vịt Con May Mắn</h3>
+						<p>120.000đ</p>
+						<button class="btn-primary" onclick="addToCart(1, 'Vịt Con May Mắn', 120000)">Thêm vào giỏ</button>
+					</div>
+				</div>
+				<div class="product-card">
+					<img src="https://images.unsplash.com/photo-1616421455589-3221d603a9f0?q=80&w=2000&auto=format&fit=crop" alt="Gấu bông">
+					<div class="product-info">
+						<h3>Gấu Nâu Trầm Tính</h3>
+						<p>150.000đ</p>
+						<button class="btn-primary" onclick="addToCart(2, 'Gấu Nâu Trầm Tính', 150000)">Thêm vào giỏ</button>
+					</div>
+				</div>
+				<div class="product-card">
+					<img src="https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?q=80&w=2000&auto=format&fit=crop" alt="Hoa len">
+					<div class="product-info">
+						<h3>Bó Hoa Hướng Dương</h3>
+						<p>250.000đ</p>
+						<button class="btn-primary" onclick="addToCart(3, 'Bó Hoa Hướng Dương', 250000)">Thêm vào giỏ</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+	<!-- CHỤM NÚT CỐ ĐỊNH (FIXED ACTION BUTTONS) -->
+		<div class="fixed-actions">
+			<!-- Nút Gọi Điện -->
+			<a href="tel:0365441880" class="action-btn phone-btn">
+				<i class="fa-solid fa-phone"></i>
+			</a>
+			
+			<!-- Nút Chatbox (Bật tắt cửa sổ chat) -->
+			<div class="action-btn chat-btn" id="chat-toggle">
+				<i class="fa-solid fa-comment-dots"></i>
+			</div>
+			
+			<!-- Cửa sổ Chat (được giữ nguyên) -->
+			<div class="chat-window" id="chat-window">
+				<div class="chat-header">Trò chuyện cùng Tiệm</div>
+				<div class="chat-body">Xin chào! Chúng mình có thể giúp gì cho bạn?</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-brand">
+					<h3>The Wool Diary</h3>
+					<p>Tiệm len handmade nhỏ nhắn mang sứ mệnh dệt nên những điều ngọt ngào từ những sợi len mềm mại. Cảm ơn bạn đã ghé thăm nhật ký của chúng mình.</p>
+					<div class="footer-socials">
+						<a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+					</div>
+				</div>
+				
+				<div class="footer-links-group">
+					<h4>Khám Phá Tiệm</h4>
+					<ul>
+						<li><a href="index.html">Trang chủ</a></li>
+						<li><a href="#">Tất cả sản phẩm</a></li>
+						<li><a href="#">Thú len nhồi bông</a></li>
+						<li><a href="#">Lớp học đan móc</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-links-group">
+					<h4>Chính Sách</h4>
+					<ul>
+						<li><a href="#">Chính sách bảo mật</a></li>
+						<li><a href="#">Vận chuyển & Giao hàng</a></li>
+						<li><a href="#">Chính sách đổi trả</a></li>
+						<li><a href="#">Hướng dẫn giặt len</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-contact">
+					<h4>Thông Tin Liên Hệ</h4>
+					<p><i class="fa-solid fa-location-dot"></i> Thôn Thụy Lân, Xã Việt Yên, Hưng Yên</p>
+					<p><i class="fa-solid fa-phone"></i> Hotline: 0365 441 880</p>
+					<p><i class="fa-solid fa-envelope"></i> tiemlen.thewooldiary@gmail.com</p>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<p>&copy; 2026 The Wool Diary. Tất cả quyền được bảo lưu. Thiết kế gọn gàng & chuyên nghiệp.</p>
+			</div>
+		</footer>
+
+		<script src="main.js"></script>
+	</body>
+</html>
