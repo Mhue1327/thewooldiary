@@ -480,3 +480,49 @@ ul { list-style: none; }
     .footer-container { grid-template-columns: 1fr; gap: 30px; }
     .chat-window { width: 90vw; right: -10px; bottom: 70px; }
 }
+
+/* Layout chung cho trang nội dung */
+.page-content { padding: 100px 5% 50px; }
+
+.care-header { text-align: center; margin-bottom: 50px; }
+.care-header h1 { color: var(--pink-dark); font-size: 36px; margin-bottom: 10px; }
+
+/* Grid hiển thị 3 thẻ hướng dẫn */
+.care-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.care-card {
+    background: var(--pink-light);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgba(243, 197, 197, 0.5);
+    transition: 0.3s;
+}
+
+.care-card:hover { transform: translateY(-10px); background: #FFF; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+
+.care-card i { font-size: 40px; color: var(--pink-dark); margin-bottom: 20px; }
+.care-card h3 { color: var(--text-main); margin-bottom: 15px; }
+.care-card p { color: var(--text-muted); font-size: 14px; }
+
+/* Danh sách Nên/Không nên */
+.dos-donts {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: #FAFAFA;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.list-side h4 { margin-bottom: 20px; font-size: 18px; }
+.do h4 { color: #2e7d32; }
+.dont h4 { color: #c62828; }
+.list-side ul li { margin-bottom: 10px; display: flex; gap: 10px; align-items: center; }
+.do i { color: #2e7d32; }
+.dont i { color: #c62828; }
